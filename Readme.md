@@ -32,7 +32,7 @@ model diagram
 
 ## Schema Diagram
 ### Northwind Small
-![Northwind Schema](/NorthwindModel_Small_.png?raw=true)
+![Northwind Schema](/NorthwindModel_Small.png?raw=true)
 
 ### Northwind Extended
 ![Northwind Schema](/NorthwindModel_Extended.png?raw=true)
