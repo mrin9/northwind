@@ -4,11 +4,6 @@ with customers, orders, inventory, purchasing, suppliers, shipping, employees, a
 <br/>
 This project is an attempt to create database agnostic srcript so that it can be reused in various other databases
 
-# Files
-* schema.sql - Contains DDL Ctatements (Table creation and Foreign Key definations)
-* data.sql   - Contains Insert statements to populate database with sample data
-* Northwind_Model_MySQLWorkbench.mwb - This File can be opened with MySQLWorkbench, and you may use to generate schema script or model diagram
-
 ## Naming Convention used 
 * Field names are in `snake_case` instead of `CamelCase`. 
     * To facilitate some ORM frameworks (Hibernate/Spring Data) which uses field names to generate Java method names
@@ -17,6 +12,27 @@ This project is an attempt to create database agnostic srcript so that it can be
 * foreign keys constrained named as `fk_table_name__reference_table_name`.
 * All the column data types are valid with most databases
 
+## Two Datasets
+* Northwind Small    (Few tables more data in each tables)
+* Northwind Extended (More Tables, More references, Less data per table)
+
+
+## Files
+* **Northwind Small**
+    * schema.sql - DDL Statements (Table creation & Foreign Key definations)
+    * data.sql   - Insert statements to populate with sample data
+
+* **Northwind Extended**
+    * schema_extended.sql - DDL Statements (Table creation & Foreign Key definations)
+    * data_extended.sql   - Insert statements to populate with sample data
+
+
+* NorthwindModel_MySQLWorkbench.mwb - This File can be opened with MySQLWorkbench, you may use it to generate schema script or 
+model diagram
 
 ## Schema Diagram
-![Northwind Schema](/NorthwindModel.png?raw=true)
+### Northwind Small
+![Northwind Schema](/NorthwindModel_Small_.png?raw=true)
+
+### Northwind Extended
+![Northwind Schema](/NorthwindModel_Extended.png?raw=true)
